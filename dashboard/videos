@@ -11,11 +11,11 @@
 
 
 
-<title>Your Videos On GoAnimate Legacy Redesined</title>
+<title>Your Videos On GoAnimate 2016</title>
 
 
 
-<meta name="description" content="The Character Creator from GoAnimate - Create a character online with GoAnimate.">
+<meta name="description" content="This lvm project is the revival edition of the old goanimate witch is simular to Vyond 2018 but some old stuff is downgraded from 2018 to 2016 witch makes the lvm project stable & work perfectly than any other! Enjoy this lvm project created by Joseph Animate 2021!">
 
 <meta property="og:site_name" content="GoAnimate for Schools">
 
@@ -25,7 +25,7 @@
 
 <link rel="stylesheet" href="/html/css/common_combined.css.gz.css">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+<link rel="stylesheet" href="https://josephcrosmanplays532.github.io/fonts/5/font2015.css">
 
 
 
@@ -39,7 +39,7 @@
 
 
 </head>
-<body class="page-action-character_creator" style="">
+<body class="page-action-video_list" style="">
 <nav class="navbar site-nav" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -49,8 +49,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-            <a class="navbar-brand" href="/dashboard/videos" title="GoAnimate Legacy Redesigned">
-                <img src="/html/img/logo.png" alt="GoAnimate Legacy Redesigned">
+            <a class="navbar-brand" href="/dashboard/videos" title="GoAnimate-2016">
+                <img src="https://josephcrosmanplays532.github.io/static/477/go/img/business_video/home/logo.png" alt="GoAnimate">
             </a>
         </div>
 
@@ -82,8 +82,8 @@
                     </ul>
                 </li>
                 <li>
-				<a class="hidden-sm hidden-md hidden-lg" href="/v/videomaker">Make a Video</a>
-				<span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/v/videomaker">Make a Video</a></span>
+				<a class="hidden-sm hidden-md hidden-lg" href="/videomaker">Make a Video</a>
+				<span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/videomaker">Make a Video</a></span>
                 </li>
             </ul>
         </div>
@@ -91,8 +91,9 @@
 </nav>
 
 <div class="alert alert-danger">
-            <div class="alert-content text-center">GoAnimate For Schools Remastered 1.2 isn't finished yet. So video importing, voice recording, preview window, etc aren't working yet. I'm trying my best to make GA4SR 
-usable. <a href="https://github.com/BluePeacocks/GoAnimate4SchoolsRemastered" target="_blank">GITHUB LINK</a>.
+            <div class="alert-content text-center">Some old stuff for GoAnimate 2016 is not currently usable at the moment.
+	    So the preview window, import sidebar, etc is not working at the moment. 
+	    <a href="https://github.com/josephcrosmanplays532/GoAnimate-2016" target="_blank">GITHUB LINK</a>.
             </div>
         </div>
 
@@ -116,7 +117,8 @@ usable. <a href="https://github.com/BluePeacocks/GoAnimate4SchoolsRemastered" ta
                     (<span class="video-count count-all">0</span>)
                 </div>
 
-                <div id="videos-folders-nav" class="list-group-item sub-folder-list"></div>
+                <div id="videos-folders-nav" class="list-group-item sub-folder-list">
+                </div>
 
                 <div class="list-group-item folder-item" style="display:none" data-page="1" data-status="" data-category="folders/sharedwith" data-sort-by="lastmod">
                     <span class="title folder-name">Shared with you</span>
@@ -131,12 +133,17 @@ usable. <a href="https://github.com/BluePeacocks/GoAnimate4SchoolsRemastered" ta
         </div>
 
         <div class="col-md-8 col-md-pull-4">
-            <input type="hidden" name="ct" value="ThMfVqmsc0PkY77_F89VKwEPLPGc+yNUzxIWdDTFTr0DocRazMTCZrMoQCdzPC7PNyDu0yWG4x1yhvo1DuT_mqi_B_AV9_sAoIAUAgJar5gSzFMTZmLwOlbiTTCf9O+_XBIC9lfmSWc8YgkgNGCVqD8nQ1oShBM3y+Nl_QR2feD6SxddUOKSO_KAW7atTZeJRyTjeXnFVV1JQFK6bBQ9OJYCi4sR349gOorc2EFQ==">
+            <input type="hidden" name="ct" value="Qyeie+pwtXSZbKSaIcP1NQfIMcSROG8unA0YjztpNNqS+zYMKemmW6gOPcArE7Vg8vtXD3zhpArh8ggfqo00VLx16eR8P58cKp5nh58COXyyP132NVQNALlf7ZJo+mgSJ1BWwEa+UL6dpvV4g_WKrrok4Q0C4ex1yWYjK7faA+31Hh00NWT+AtuRw97PsbjKiQgNg9QpYHwTalNmVZd1AG2yF2Xwp7WBL6PXzDQYs=" />
 
-<div class="grid video-listing-grid hide-folders folder-access" id="video-listing-grid">
+<div class="grid video-listing-grid hide-folders" id="video-listing-grid">
+    <div class="video-list-header">
+        <div class="video-status-filter pull-right">
+            Show:            <a class="link-secondary active" data-status="">All</a>
+        </div>
+    </div>
 
-    <div class="grid-viewport video-listing" id="videos">
-        <table class="table table-hover table-generic">
+    
+<table class="table table-hover table-generic">
             
 		<thead>
 			<tr>
@@ -154,14 +161,38 @@ usable. <a href="https://github.com/BluePeacocks/GoAnimate4SchoolsRemastered" ta
 		</tfoot>
 	
         </table>
+
+
+</div>
+</div>
+
+<div id="autosave-overlay" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="modal-title">Your video was autosaved</h3>
+            </div>
+            <div class="modal-body">
+                <span class="autosave-message"></span>
+            </div>
+            <div class="modal-footer">
+                <button class="load-manualsave btn btn-default text-uppercase">Manually saved</button>
+                <button class="load-autosave btn btn-default btn-orange text-uppercase">Load autosaved</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+
     </div>
 
-
-
+</div>
 
 <script type="text/javascript" charset="utf-8">
 var _kiq = _kiq || [];
-_kiq.push(['identify', "ynnbrxqnecaymhdirl@awdrt.org"]);
+_kiq.push(['identify', "devorem248@brayy.com"]);
 </script>
 </div>
 
@@ -243,9 +274,9 @@ _kiq.push(['identify', "ynnbrxqnecaymhdirl@awdrt.org"]);
     </div>
 </div>
 
-<form enctype="multipart/form-data" action="/ajax/videoUpload/" method="post" style="display: none;">
-		<input id="file" type="file" onchange="this.form.submit()" name="import">
-	</form>
+<form enctype="multipart/form-data" action="/ajax/videoUpload" method="post" style="display: none;">
+  <input id="file" type="file" onchange="this.form.submit()" name="import">
+</form>
 
 
 <script>
@@ -255,7 +286,7 @@ _kiq.push(['identify', "ynnbrxqnecaymhdirl@awdrt.org"]);
 		var tbody = document.getElementsByTagName('tbody')[0];
 		var loadMore = document.getElementById('load_more');
 		const listReq = new XMLHttpRequest();
-		listReq.open('GET', '/movieList');
+		listReq.open('GET', '/ajax/yourvideos');
 		listReq.send();
 
 		var C = 0;
