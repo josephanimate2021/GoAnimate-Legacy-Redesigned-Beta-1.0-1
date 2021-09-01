@@ -1,5 +1,5 @@
-# GoAnimate Legacy Redesigned
-This is an API for the original GoAnimate, but with some added-in features. This project is a revival for the old GoAnimate servers for people to learn about, and use. If you are gonna use this service, please give us credit! Anyways, enjoy using this project. This project is for everyone to use!
+# GoAnimate 2016
+This LVM Project is simular to Vyond 2018 but i'm downgrading some old stuff to make it look like it's 2016 to make this lvm stable & work perfectly.
 # How to Use
 To access this service, install [Node.JS](https://nodejs.org/en/) then clone/download this project.	Once done, unzip the folder, copy the path, and execute the following commands in your command prompt (where `{PATH}` is the folder path you copied):
 ```console
@@ -9,4 +9,4 @@ npm start
 ```
 **When done, go to your web browser and navigate to `localhost`.**
 # Alternate Startup Method
-In GA Legacy Redesigned, there is a file called faststart.bat, and with this file, you can start GA Legacy Redesigned faster, and easier, without opening up command prompt and typing all of this in command prompt.
+In GA 2016, there is a file called faststart.bat, and with this file, you can start GA 2016 faster, and easier, without opening up command prompt and typing all of this in command prompt.
