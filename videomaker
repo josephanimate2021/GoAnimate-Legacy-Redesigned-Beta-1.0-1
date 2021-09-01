@@ -18,7 +18,7 @@
     <link rel="alternate" href="http://feeds.feedburner.com/GoAnimate/MostWatched" type="application/rss+xml" title="GoAnimate - Most Watched">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic" rel="stylesheet" type="text/css">
-    <link href="https://d3v4eglovri8yt.cloudfront.net/static/ad44370a650793d9/go/css/common_combined.css" rel="stylesheet" type="text/css">
+    <link href="https://d3v4eglovri8yt/static/ad44370a650793d9/go/css/common_combined.css" rel="stylesheet" type="text/css">
 
     <link href="https://d3v4eglovri8yt.cloudfront.net/static/ad44370a650793d9/go/css/upsell_modals.css" rel="stylesheet" type="text/css">
     <link href="https://d3v4eglovri8yt.cloudfront.net/static/ad44370a650793d9/go/css/videomaker3.css" rel="stylesheet" type="text/css">
@@ -28,7 +28,7 @@
     </style>
     <![endif]-->
 
-    <script id="hs-analytics" src="//web.archive.org/web/20180104005511/https://js.hs-analytics.net/analytics/1619743200000/427840.js"></script><script id="facebook-jssdk" src="//web.archive.org/web/20180104005511/https://connect.facebook.net/en_US/sdk.js"></script><script type="text/javascript" async="" src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-2.12.1-min.gz.js"></script><script async="" src="//web.archive.org/web/20180104005511/https://www.googletagmanager.com/gtm.js?id=GTM-TXV7MD"></script><script>
+    <script id="hs-analytics" src="//js.hs-analytics.net/analytics/1619743200000/427840.js"></script><script id="facebook-jssdk" src="//web.archive.org/web/20180104005511/https://connect.facebook.net/en_US/sdk.js"></script><script type="text/javascript" async="" src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-2.12.1-min.gz.js"></script><script async="" src="//web.archive.org/web/20180104005511/https://www.googletagmanager.com/gtm.js?id=GTM-TXV7MD"></script><script>
         var srv_tz_os = -5, view_name = "go", user_cookie_name = "u_info";
         var user_role = null;
     </script>
@@ -48,7 +48,7 @@
     <script>
         dataLayer = [];
     </script>
-    <noscript><iframe src="//web.archive.org/web/20180104005511if_/https://www.googletagmanager.com/ns.html?id=GTM-TXV7MD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TXV7MD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
     (function (w, d, s, l, i) {
         w[l] = w[l] || []; w[l].push({
@@ -56,7 +56,7 @@
                 new Date().getTime(), event: 'gtm.js'
         }); var f = d.getElementsByTagName(s)[0],
             j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                '//web.archive.org/web/20180104005511/https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TXV7MD');</script>
     <!-- Google Tag Manager -->
 
@@ -329,7 +329,7 @@
         }
 
         .fb_dialog_close_icon {
-            background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
             cursor: pointer;
             display: block;
             height: 15px;
@@ -353,11 +353,11 @@
         }
 
         .fb_dialog_close_icon:hover {
-            background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent
         }
 
         .fb_dialog_close_icon:active {
-            background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent
         }
 
         .fb_dialog_loader {
@@ -375,25 +375,25 @@
         }
 
         .fb_dialog_top_left {
-            background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;
             left: -10px;
             top: -10px
         }
 
         .fb_dialog_top_right {
-            background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;
             right: -10px;
             top: -10px
         }
 
         .fb_dialog_bottom_left {
-            background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;
             bottom: -10px;
             left: -10px
         }
 
         .fb_dialog_bottom_right {
-            background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;
             right: -10px;
             bottom: -10px
         }
@@ -447,7 +447,7 @@
         }
 
             .fb_dialog_content .dialog_title > span {
-                background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+                background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
                 float: left;
                 padding: 5px 0 7px 26px
             }
@@ -464,7 +464,7 @@
         }
 
         .fb_dialog.fb_dialog_mobile.loading {
-            background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
             min-height: 100%;
             min-width: 100%;
             overflow: hidden;
@@ -586,7 +586,7 @@
         }
 
         .fb_dialog_content .dialog_content {
-            background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
             border: 1px solid #555;
             border-bottom: 0;
             border-top: 0;
@@ -615,7 +615,7 @@
         #fb_dialog_loader_spinner {
             animation: rotateSpinner 1.2s linear infinite;
             background-color: transparent;
-            background-image: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+            background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
             background-repeat: no-repeat;
             background-position: 50% 50%;
             height: 24px;
@@ -685,7 +685,7 @@
         }
 
         .fb_iframe_widget_loader .FB_Loader {
-            background: url(http://web.archive.org/web/20180104005511if_/https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;
             height: 32px;
             width: 32px;
             margin-left: -16px;
@@ -722,24 +722,6 @@
     </style>
 
 
-    <!-- BEGIN WAYBACK TOOLBAR INSERT -->
-    <style type="text/css">
-        body {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-            /*min-width:800px !important;*/
-        }
-    </style>
-    <script>__wm.rw(0);</script>
-    <div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
-    </div><div id="donato" style="position:relative;width:100%;">
-        
-    </div>
-    <script type="text/javascript">
-        __wm.bt(625, 27, 25, 2, "web", "/videomaker", "20180104005511", 1996, "/_static/", ["/_static/css/banner-styles.css?v=NHuXCfBH", "/_static/css/iconochive.css?v=qtvMKcIJ"]);
-        __wm.rw(1);
-    </script>
-    <!-- END WAYBACK TOOLBAR INSERT -->
     <script type="text/javascript">
         if (self !== top) {
             jQuery('body').hide();
@@ -761,7 +743,7 @@
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) { return; }
             js = d.createElement(s); js.id = id;
-            js.src = "//web.archive.org/web/20180104005511/https://connect.facebook.net/en_US/sdk.js";
+            js.src = "//connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -785,27 +767,24 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="/" title="GoAnimate">
-                            <img alt="Make a Video Online with Vyond: Legacy Remastered" src="https://cdn.discordapp.com/attachments/836758353019142197/837488582209306665/ga_legacy_remastered_logo_small.png">
+                            <img alt="Make a Video Online with Goanimate.com" src="https://josephcrosmanplays532.github.io/static/477/go/img/business_video/home/logo.png">
                         </a>
                     </div>
 
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="/yourvideos">Your Videos</a></li>
-                            <li><a href="http://web.archive.org/web/20180104005511/https://goanimate.com/login">Login</a></li>
+                            <li><a href="/dashboard/videos">Your Videos</a></li>
+                            <li><a href="https://vyond2018.herokuapp.com">Vyond 2018</a></li>
                             <li class="dropdown">
-                                <a class="dropdown-toggle" href="http://web.archive.org/web/20180104005511/https://goanimate.com/videos" data-toggle="dropdown">Explore <span class="caret"></span></a>
+                                <a class="dropdown-toggle" href="/character_creator" data-toggle="dropdown">Create a Character <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="http://web.archive.org/web/20180104005511/http://resources.goanimate.com/">Resources</a></li>
-                                    <li><a href="http://web.archive.org/web/20180104005511/http://blog.goanimate.com/">Blog</a></li>
-                                    <li><a href="http://web.archive.org/web/20180104005511/https://goanimate.com/videos">Featured Videos</a></li>
-                                    <li><a href="http://web.archive.org/web/20180104005511/http://blog.goanimate.com/topic/case-studies">Case Studies</a></li>
-                                    <li><a href="http://web.archive.org/web/20180104005511/https://support.goanimate.com/">Help Center</a></li>
+                                    <li><a href="/character_creator/?themeId=family">Comedy World</a></li>
+                                    <li><a href="/character_creator/?themeId=cc2">Lill' Peepz</a></li>
                                 </ul>
                             </li>
                             <li class="plans-and-pricing">
-                                <a href="http://web.archive.org/web/20180104005511/https://goanimate.com/business/videoplans/?hook=header_button.site">Plans &amp; Pricing</a>
+                                <a href="https://vyond2019.herokuapp.com/?hook=header_button.site">Vyond 2019</a>
                             </li>
                             <li>
                                 <a class="hidden-sm hidden-md hidden-lg" href="/videomaker">Make a Video</a>
