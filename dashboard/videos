@@ -121,7 +121,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <ul class="nav site-nav-alert-nav hidden-xs">
             <li>
-                <a href="/notifications" title="Notifications"><span class="glyph-pro glyph-bell"></a>
+                <a href="/notifications" title="Notifications"><span class="glyph-pro glyph-bell"></span></a>
             </li>
         </ul>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
