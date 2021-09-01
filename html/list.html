@@ -58,8 +58,8 @@
 		<thead>
 			<tr>
 				<td></td>
-				<td>Name</td>
-				<td>Modified</td>
+				<td>Video Title</td>
+				<td>Last Modified</td>
 				<td></td>
 			</tr>
 		</thead>
@@ -70,7 +70,7 @@
 			</tr>
 		</tfoot>
 	</table>
-	<form enctype='multipart/form-data' action='/upload_movie' method='post'>
+	<form enctype='multipart/form-data' action='/ajax/videoUpload' method='post'>
 		<input id='file' type="file" onchange="this.form.submit()" name='import' accept=".xml" />
 	</form>
 	<script>
@@ -78,7 +78,7 @@
 		var tbody = document.getElementsByTagName('tbody')[0];
 		var loadMore = document.getElementById('load_more');
 		const listReq = new XMLHttpRequest();
-		listReq.open('GET', '/movieList');
+		listReq.open('GET', '/ajax/yourvideos');
 		listReq.send();
 
 		var C = 0;
