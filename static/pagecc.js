@@ -135,7 +135,7 @@ module.exports = function (req, res, url) {
 
         <ul class="breadcrumb">
             <li><a href="/create">Make a video</a></li>
-            <script>document.flashvars='<li><a href="/character_creator/?themeId=${themeId}">Your Characters</a></li>'</script>
+            <li><a href="/character_creator/">Your Characters</a></li>
             <li class="active">Create a new character</li>
         </ul>
 
