@@ -1,6 +1,6 @@
-const fUtil = require('../misc/file');
-const stuff = require('./info');
-const http = require('http');
+const fUtil = require("../misc/file");
+const stuff = require("./info");
+const http = require("http");
 
 function toAttrString(table) {
 	return typeof (table) == 'object' ? Object.keys(table).filter(key => table[key] !== null).map(key =>
