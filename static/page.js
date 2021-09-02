@@ -198,7 +198,7 @@ if (self !== top) {
 height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
 <!-- End Google Tag Manager (noscript) -->
 <script type="text/javascript">
-        jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"https:\/\/josephcrosmanplays532.github.io\/animation\/66453a3ba2cc5e1b\/actionshop.swf","apiserver":"\/","clientThemePath":"https:\/\/josephcrosmanplays532.github.io\/static\/019b83797158fc0c\/<client_theme>","userId":"0cf4CMw1ZNCk"});
+        jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"https:\/\/d3v4eglovri8yt.cloudfront.net\/animation\/66453a3ba2cc5e1b\/actionshop.swf","apiserver":"http:\/\/ga.vyond.com\/","clientThemePath":"https:\/\/d3v4eglovri8yt.cloudfront.net\/static\/019b83797158fc0c\/<client_theme>","userId":"0cf4CMw1ZNCk"});
 </script>
 <div class="page-container">
 <!-- END OF HEADER -->
@@ -234,7 +234,7 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
         <div id="studio-voice-vendor-container">
             <ul>
                 <li><a class="gtm-ga-pageview-t2" id="voice-vendor-vb" target="_blank" href="https://voicebunny.com/?p=vyond" data-gtmv-page="/pageTracker/voicebanner/VoiceBunny" onclick="setvoicebannercookie();"><img src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/video_voice/btn_vb.png"></a></li>
-                <li><a class="gtm-ga-pageview-t2" id="voice-vendor-va" target="_blank" href="https://www.voicearchive.com/" data-gtmv-page="/pageTracker/voicebanner/VoiceArchive" onclick="setvoicebannercookie();"><img src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/video_voice/btn_va.png"></a></li>
+                <li><a class="gtm-ga-pageview-t2" id="voice-vendor-iw" target="_blank" href="https://www.voicearchive.com/" data-gtmv-page="/pageTracker/voicebanner/VoiceArchive" onclick="setvoicebannercookie();"><img src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/video_voice/btn_va.png"></a></li>
                 <li>
                     <hr class="sperator">
                     <a class="voiceover-tips gtm-ga-pageview-t2" target="_blank" href="http://goanimate.com/video-maker-tips/tutorial-why-you-should-break-up-your-dialogue-audio-into-small-pieces-before-importing/" data-gtmv-page="/pageTracker/voicebanner/VoiceoverTips" onclick="setvoicebannercookie();"><span><i class="lightbulb"></i>Voiceover Tips &gt;</span></a>
