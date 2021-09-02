@@ -48,7 +48,7 @@ module.exports = function (req, res, url) {
 					storePath: process.env.STORE_URL + "/<store>",
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
 					original_asset_id: query["id"] || null,
-					themeId: "business",
+					themeId: "family",
 					ut: 60,
 					bs: "default",
 					appCode: "go",
@@ -90,14 +90,14 @@ module.exports = function (req, res, url) {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-            <a class="navbar-brand" href="/dashboard/videos" title="GoAnimate Legacy Redesigned">
-                <img src="/html/img/logo.png" alt="GoAnimate Legacy Redesigned">
+            <a class="navbar-brand" href="/dashboard/videos" title="GoAnimate 2016">
+                <img src="https://josephcrosmanplays532.github.io/static/477/go/img/business_video/home/logo.png" alt="GoAnimate">
             </a>
         </div>
 
         <ul class="nav site-nav-alert-nav hidden-xs">
             <li>
-                <a href="/notifications" title="Notifications"><span class="glyph-pro glyph-bell"></a>
+                <a href="/notifications" title="Notifications"><span class="glyph-pro glyph-bell"></span></a>
             </li>
         </ul>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -123,8 +123,8 @@ module.exports = function (req, res, url) {
                     </ul>
                 </li>
                 <li>
-				<a class="hidden-sm hidden-md hidden-lg" href="/v/videomaker">Make a Video</a>
-				<span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/v/videomaker">Make a Video</a></span>
+				<a class="hidden-sm hidden-md hidden-lg" href="/videomaker">Make a Video</a>
+				<span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/videomaker">Make a Video</a></span>
                 </li>
             </ul>
         </div>
@@ -134,8 +134,8 @@ module.exports = function (req, res, url) {
 
 
         <ul class="breadcrumb">
-            <li><a href="/c/create">Make a video</a></li>
-            <li><a href="/character_creator/">Your Characters</a></li>
+            <li><a href="/create">Make a video</a></li>
+            <script>document.flashvars='<li><a href="/character_creator/?themeId=${themeId}">Your Characters</a></li>'</script>
             <li class="active">Create a new character</li>
         </ul>
 
