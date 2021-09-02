@@ -4,6 +4,8 @@ const http = require("http");
 const chr = require("./character/redirect");
 const pmc = require("./character/premade");
 const chl = require("./character/load");
+const chu = require("./character/upload");
+const chp = require("./character/parse");
 const chs = require("./character/save");
 const cht = require("./character/thmb");
 const mvu = require("./movie/upload");
@@ -27,7 +29,7 @@ const tsv = require("./tts/voices");
 const tsl = require("./tts/load");
 const url = require("url");
 
-const functions = [mvL, pmc, asl, chl, thl, thL, chs, cht, asL, tsl, chr, ast, mvm, mvl, mvs, mvt, tsv, asu, mvu, stp, stc, scc, slv, stl];
+const functions = [mvL, pmc, asl, chl, chu, chp, thl, thL, chs, cht, asL, tsl, chr, ast, mvm, mvl, mvs, mvt, tsv, asu, mvu, stp, stc, scc, slv, stl];
 
 module.exports = http
 	.createServer((req, res) => {
