@@ -1,115 +1,63 @@
-const fUtil = require("../misc/file");
-const stuff = require("./info");
-const http = require("http");
+const fUtil = require('../misc/file');
+const stuff = require('./info');
+const http = require('http');
 
 function toAttrString(table) {
-	return typeof table == "object"
-		? Object.keys(table)
-				.filter((key) => table[key] !== null)
-				.map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(table[key])}`)
-				.join("&")
-		: table.replace(/"/g, '\\"');
+	return typeof (table) == 'object' ? Object.keys(table).filter(key => table[key] !== null).map(key =>
+		`${encodeURIComponent(key)}=${encodeURIComponent(table[key])}`).join('&') : table.replace(/"/g, "\\\"");
 }
 function toParamString(table) {
-	return Object.keys(table)
-		.map((key) => `<param name="${key}" value="${toAttrString(table[key])}">`)
-		.join(" ");
+	return Object.keys(table).map(key =>
+		`<param name="${key}" value="${toAttrString(table[key])}">`
+	).join(' ');
 }
-function toObjectString(attrs, params) {
-	return `<object id="obj" ${Object.keys(attrs)
-		.map((key) => `${key}="${attrs[key].replace(/"/g, '\\"')}"`)
-		.join(" ")}>${toParamString(params)}</object>`;
+function toObjectString(attrs, params, navbar) {
+	return `<object id="obj" ${Object.keys(attrs).map(key =>
+		`${key}="${attrs[key].replace(/"/g, "\\\"")}"`
+	).join(' ')}>${toParamString(params)}</object>`;
 }
 
-/**
- * @param {http.IncomingMessage} req
- * @param {http.ServerResponse} res
- * @param {import("url").UrlWithParsedQuery} url
- * @returns {boolean}
- */
 module.exports = function (req, res, url) {
-	if (req.method != "GET") return;
+	if (req.method != 'GET') return;
 	const query = url.query;
 
 	var attrs, params, title;
-	switch (url.pathname) {		
-		case "/videomaker/full/": {
-			let presave =
-				query.movieId && query.movieId.startsWith("m")
-					? query.movieId
-					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
-			title = "Video Editor";
-			attrs = {
-				data: process.env.SWF_URL + "/go_full.swf",
-				type: "application/x-shockwave-flash",
-                                width: "100%",
-                                height: "100%",
+	switch (url.pathname) {
+		case '/videomaker/full/': {
+			let presave = query.movieId && query.movieId.startsWith('m') ? query.movieId :
+				`m-${fUtil[query.noAutosave ? 'getNextFileId' : 'fillNextFileId']('movie-', '.xml')}`;
+			title = 'The Video Maker from Vyond Remastered - Make a Video for YouTube!';
+			attrs = { 
+				data: process.env.SWF_URL + '/go_full.swf',
+				type: 'application/x-shockwave-flash', width: '100%', height: '100%',
 			};
 			params = {
 				flashvars: {
-					movieId: "",
-			                loadas: 0,
-					presaveId: presave,
-			                asId: "",
-		  	                originalId: "",
-			                apiserver: "/",
-			                storePath: process.env.STORE_URL + "/<store>",
-			                clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-			                animationPath: process.env.SWF_URL + "/",
-			                userId: "0cf4CMw1ZNCk",
-			                username: "bakeryb40488",
-			                uemail: "bakeryb40488@gmail.com",
-			                numContact: "0",
-			                ut: 23,
-			                ve: false,
-			                isEmbed: 0,
-			                nextUrl: "/go/savedMovie/?movieId=<movieId>",
-			                bgload: process.env.SWF_URL + "/go_full.swf",
-			                lid: "13",
-			                ctc: "go",
-			                themeColor: "silver",
-			                tlang: "en_US",
-			                siteId: "13",
-			                templateshow: "false",
-			                forceshow: "false",
-			                appCode: "go",
-			                lang: "en",
-			                tmcc: 4048901,
-			                fb_app_url: "/",
-			                is_published: "0",
-			                is_private_shared: "1",
-			                is_password_protected: false,
-			                upl: 1,
-			                hb: "1",
-			                pts: "1",
-			                msg_index: "",
-			                ad: 0,
-			                has_asset_bg: 1,
-			                has_asset_char: 0,
-			                initcb: "studioLoaded",
-			                retut: 0,
-			                featured_categories: null,
-			                s3base: "https://josephcrosmanplays532.github.io/s3base",
-			                st: "",
-			                uisa: 0, 
-			                u_info: "OjI6elg5SnZCOUEyTHZiY2lhZGRXTm9Nd0ljVWhNbEpGaXJFdkpEdkltdEp6RWhrQ0VIbXZIVTBjRTlhUGZKMjJoVHVTUE5vZk1XYnFtSE1vZG5TeldyQVJNcDFmUFB2NDVtR0FTSlZZ",
-			                tm: "FIN",
-			                tray: "custom",
-			                isWide: 1,
-			                newusr: 1,
-			                goteam_draft_only: 0
+					'movieId': '', 'loadas': 0, 'presaveId': presave, 'asId': '', 'originalId': '', 'apiserver': '/', 
+					'storePath': process.env.STORE_URL + '/<store>', 'clientThemePath': process.env.CLIENT_URL + '/<client_theme>',
+					'animationPath': process.env.SWF_URL + '/', 'userId': '0cf4CMw1ZNCk', 'username': 'bakeryb40488', 
+					'uemail': 'bakeryb40488@gmail.com', 'numContact': '0', 'ut': 23, 've': false, 'isEmbed': 0, 
+					'nextUrl': '/go/savedMovie/0/1/?movieId=<movieId>', 'bgload': process.env.SWF_URL + '/go_full.swf', 'lid': '1', 
+					'ctc': 'go', 'themeColor': 'silver', 'tlang': 'en_US', 'siteId': '13', 'templateshow': 'false', 
+					'forceshow':'false', 'appCode': 'go', 'lang': 'en', 'tmcc': 4048901, 'fb_app_url': '/', 'is_published': 
+					'0', 'is_private_shared': '1', 'is_password_protected': false, 'upl': 1, 'hb': '1', 'pts': '1', 'msg_index': '', 
+					'ad': 0, 'has_asset_bg': 1, 'has_asset_char': 0, 'initcb': 'studioLoaded', 'retut': 0, 'featured_categories': null,
+					's3base': 'https://s3.amazonaws.com/fs.goanimate.com/,https://assets.vyond.com/', 'st': '', 'uisa': 0, 
+					'u_info': 'OjI6elg5SnZCOUEyTHZiY2lhZGRXTm9Nd0ljVWhNbEpGaXJFdkpEdkltdEp6RWhrQ0VIbXZIVTBjRTlhUGZKMjJoVHVTUE5vZk1XYnFtSE1vZG5TeldyQVJNcDFmUFB2NDVtR0FTSlZZ',
+					'tm': 'FIN', 'tray': 'custom', 'isWide': 1, 'newusr': 1, 'goteam_draft_only': 0,
 				},
-				allowScriptAccess: "always",
+				allowScriptAccess: 'always',
 			};
+			sessions.set({ movieId: presave }, req);
 			break;
 		}
 		default:
 			return;
 	}
-	res.setHeader("Content-Type", "text/html; charset=UTF-8");
+	res.setHeader('Content-Type', 'text/html; charset=UTF-8');
 	Object.assign(params.flashvars, query);
-	res.end(`
-	<html><head>
+	res.end(
+	`<html><head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="dns-prefetch" href="https://josephcrosmanplays532.github.io">
@@ -190,7 +138,7 @@ if (self !== top) {
 height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
 <!-- End Google Tag Manager (noscript) -->
 <script type="text/javascript">
-        jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"https:\/\/josephcrosmanplays532.github.io\/animation\/66453a3ba2cc5e1b\/actionshop.swf","apiserver":"\/","clientThemePath":"https:\/\/josephcrosmanplays532.github.io\/static\/019b83797158fc0c\/<client_theme>","userId":"0cf4CMw1ZNCk"});
+        jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"https:\/\/d3v4eglovri8yt.cloudfront.net\/animation\/66453a3ba2cc5e1b\/actionshop.swf","apiserver":"http:\/\/ga.vyond.com\/","clientThemePath":"https:\/\/d3v4eglovri8yt.cloudfront.net\/static\/019b83797158fc0c\/<client_theme>","userId":"0cf4CMw1ZNCk"});
 </script>
 <div class="page-container">
 <!-- END OF HEADER -->
@@ -226,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
         <div id="studio-voice-vendor-container">
             <ul>
                 <li><a class="gtm-ga-pageview-t2" id="voice-vendor-vb" target="_blank" href="https://voicebunny.com/?p=vyond" data-gtmv-page="/pageTracker/voicebanner/VoiceBunny" onclick="setvoicebannercookie();"><img src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/video_voice/btn_vb.png"></a></li>
-                <li><a class="gtm-ga-pageview-t2" id="voice-vendor-iw" target="_blank" href="https://www.voicearchive.com/" data-gtmv-page="/pageTracker/voicebanner/VoiceArchive" onclick="setvoicebannercookie();"><img src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/video_voice/btn_va.png"></a></li>
+                <li><a class="gtm-ga-pageview-t2" id="voice-vendor-iw" target="_blank" href="https://www.inwhatlanguage.com/goanimate-translations/" data-gtmv-page="/pageTracker/voicebanner/InWhatLanguage" onclick="setvoicebannercookie();"><img src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/video_voice/btn_iw.png"></a></li>
                 <li>
                     <hr class="sperator">
                     <a class="voiceover-tips gtm-ga-pageview-t2" target="_blank" href="http://goanimate.com/video-maker-tips/tutorial-why-you-should-break-up-your-dialogue-audio-into-small-pieces-before-importing/" data-gtmv-page="/pageTracker/voicebanner/VoiceoverTips" onclick="setvoicebannercookie();"><span><i class="lightbulb"></i>Voiceover Tips &gt;</span></a>
@@ -325,7 +273,7 @@ function voiceBanner(bannerId) {
         var enable_full_screen = true;
         var studio_data = {
             id: "Studio",
-            swf: "https://josephcrosmanplays532.github.io/animation/66453a3ba2cc5e1b/go_full.swf",
+            swf: "https://josephcrosmanplays532.github.io/animation/414827163ad4eb60vyondlegacyremastered/go_full.swf",
             width: "100%",
             height: "100%",
             align: "middle",
@@ -576,7 +524,7 @@ function loadLegacyPreview() {
     createPreviewPlayer("playerdiv", {
         height: 360,
         width: 640,
-        player_url: "https://josephcrosmanplays532.github.io/animation/66453a3ba2cc5e1b/player.swf",
+        player_url: "https://josephcrosmanplays532.github.io/animation/414827163ad4eb60vyondlegacyremastered/player.swf",
         quality: "medium"
     }, {
         movieOwner: "", movieOwnerId: "", movieId: "", ut: "-1",
@@ -896,6 +844,6 @@ src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAARAQAABAAQRFNJRw
 <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js");fbq("init","784667875001149");fbq("track","PageView");</script>
 <noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=784667875001149&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
 </body></html>`
-	);
+		);
 	return true;
-};
+}
