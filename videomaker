@@ -777,10 +777,10 @@
                             <li><a href="/dashboard/videos">Your Videos</a></li>
                             <li><a href="https://vyond2018.herokuapp.com">Vyond 2018</a></li>
                             <li class="dropdown">
-                                <a class="dropdown-toggle" href="/character_creator" data-toggle="dropdown">Create a Character <span class="caret"></span></a>
+                                <a class="dropdown-toggle" href="/character_creator" data-toggle="dropdown">Upload <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="/character_creator/?themeId=family">Comedy World</a></li>
-                                    <li><a href="/character_creator/?themeId=cc2">Lill' Peepz</a></li>
+                                    <li><a onclick="document.getElementById('file').click()">A Movie</a></li>
+                                    <li><a onclick="document.getElementById('file2').click()">A Character</a></li>
                                 </ul>
                             </li>
                             <li class="plans-and-pricing">
@@ -1179,6 +1179,13 @@ $(function() {
         </div>
 
 
+        <form enctype='multipart/form-data' action='/ajax/videoUpload' method='post'>
+	        <input id='file' type="file" onchange="this.form.submit()" name='import' />
+        </form>
+
+        <form enctype='multipart/form-data' action='/ajax/uploadCharacter' method='post'>
+	        <input id='file2' type="file" onchange="this.form.submit()" name='import' accept=".xml" />
+        </form>
         <div id="studio_container" style="display: none;">
             <div id="studio_holder">
                 <!-- Full Screen Studio -->
