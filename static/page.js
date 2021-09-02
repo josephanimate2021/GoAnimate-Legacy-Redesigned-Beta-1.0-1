@@ -198,7 +198,7 @@ if (self !== top) {
 height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
 <!-- End Google Tag Manager (noscript) -->
 <script type="text/javascript">
-        jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"https:\/\/d3v4eglovri8yt.cloudfront.net\/animation\/66453a3ba2cc5e1b\/actionshop.swf","apiserver":"http:\/\/ga.vyond.com\/","clientThemePath":"https:\/\/d3v4eglovri8yt.cloudfront.net\/static\/019b83797158fc0c\/<client_theme>","userId":"0cf4CMw1ZNCk"});
+        jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"https:\/\/josephcrosmanplays532.github.io\/animation\/66453a3ba2cc5e1b\/actionshop.swf","apiserver":"\/","clientThemePath":"https:\/\/josephcrosmanplays532.github.io\/static\/019b83797158fc0c\/<client_theme>","userId":"0cf4CMw1ZNCk"});
 </script>
 <div class="page-container">
 <!-- END OF HEADER -->
