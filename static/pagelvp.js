@@ -394,62 +394,54 @@ if (self !== top) {
         jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"https:\/\/web.archive.org\/web\/20160123121200\/http:\/\/lightspeed.goanimate.com\/animation\/4bd9a7c97397c789\/actionshop.swf","apiserver":"https:\/\/web.archive.org\/web\/20160123121200\/http:\/\/goanimate.com\/","clientThemePath":"https:\/\/web.archive.org\/web\/20160123121200\/http:\/\/lightspeed.goanimate.com\/static\/e15535186b40e6eb\/<client_theme>","userId":""});
 </script>
 <div class="page-container">
-<div class="site-header">
-    <div class="navbar site-nav site-nav--legacy" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="https://ga.vyond.com/yourvideos" title="Vyond">
-                      <img alt="Vyond" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/vyond/vyond_logo_legacy.png">
-                  </a>
-            </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                
-<ul class="nav navbar-nav navbar-right">
-<li class="dropdown">
-    <a class="dropdown-toggle" href="https://discord.gg/YYFenX5Fep" data-toggle="dropdown">Help<span class="dropdown-caret"></span></a>
-    <ul class="dropdown-menu dropdown-menu-help">
-        <li>
-            <a href="https://discord.gg/YYFenX5Fep">Help Center</a>
-        </li>
-    </ul>
-</li>
-                    <li>
-                        <a class="hidden-sm hidden-md hidden-lg" href="/videomaker">Make a Video</a>
-                        <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/videomaker">Make a Video</a></span>
-                    </li>
-<li class="dropdown">
-    <a class="dropdown-toggle" href="https://app.vyond.com/v2/profile" data-toggle="dropdown">
-        <span class="hidden-sm hidden-md hidden-lg">Your Account</span>
-        <div class="site-nav__profile-image">
-            <div class="badge-circle">JA</div>
-        </div><span class="dropdown-caret"></span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-user">
-        <li class="dropdown-user-profile">
-            <div class="dropdown-user-profile__display-name">
-                Joseph Animate 2021 (Owner)            </div>
-        </li>
-        <li class="divider"></li>
-        <li><a href="/profile/you.html">Profile Settings</a></li>
-        <li><a href="https://app.vyond.com/v2/users/list">Users</a></li>
-        <li><a href="https://app.vyond.com/v2/security">Security</a></li>
-        <li><a href="https://app.vyond.com/v2/subscription">Subscription</a></li>
-        <li class="divider"></li>
-        <li><a href="https://app.vyond.com/video/list" onClick="amplitudeTrackSwitchVideoMaker('Go to Vyond Studio')">Go to Vyond Studio</a></li>
-        <li class="divider"></li>
-        <li><a class="gtm-logout" href="https://ga.vyond.com/logoff">Log Out</a></li>
-    </ul>
-</li>
-      </ul>
-                
-            </div>
+<nav class="navbar site-nav" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="/dashboard/videos" title="GoAnimate 2016">
+                <img src="https://josephcrosmanplays532.github.io/static/477/go/img/business_video/home/logo.png" alt="GoAnimate">
+            </a>
+        </div>
+        <ul class="nav site-nav-alert-nav hidden-xs">
+            <li>
+                <a href="/notifications" title="Notifications"><span class="glyph-pro glyph-bell"></span></a>
+            </li>
+        </ul>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Your Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/student">Dashboard</a></li>
+                        <li><a href="/dashboard/videos">Your Videos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/account">Account Settings</a></li>
+                        <li><a href="/profile/you">Your Profile</a></li>
+                        <li class="divider"></li>
+                        <li><a class="logout-link" href="/logoff">Logout</a></li>
+                    </ul>
+                </li><li class="dropdown">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Explore <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/students">Students</a></li>
+                        <li><a href="/teachers">Teachers</a></li>
+                        <li><a href="/videos">Videos</a></li>
+                        <li><a href="/public_faq">FAQ</a></li>
+                    </ul>
+                </li>
+                <li>
+				<a class="hidden-sm hidden-md hidden-lg" href="/videomaker">Make a Video</a>
+				<span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/videomaker">Make a Video</a></span>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</nav>
 <!-- END OF HEADER -->
 <div id="video-page">
 <div class="video-top">
