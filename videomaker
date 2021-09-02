@@ -850,6 +850,9 @@
 
                 <div class="theme__content__cta hidden-mobile">
                     <a class="btn btn-lg btn-orange text-uppercase" href="/videomaker/full/?tray=action">Select</a>
+		    <br>
+                        <a class="theme__cc-link" href="/character_creator/?themeId=cc2">
+                        Character Creator                    </a>
 
                 </div>
             </div>
@@ -881,6 +884,9 @@
                 <div class="theme__content__cta hidden-mobile">
                     <a class="btn btn-lg btn-orange text-uppercase" href="/videomaker/full/?tray=custom">Select</a>
 		    <a href="/text2video/everydaylife" class="text-uppercase">Quick Video Maker</a>
+		    <br>
+                        <a class="theme__cc-link" href="/character_creator/?themeId=family">
+                        Character Creator                    </a>
 
                 </div>
             </div>
