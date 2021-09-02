@@ -1,5 +1,4 @@
 const formidable = require('formidable');
-const parse = require('./parse');
 const fUtil = require('../misc/file');
 const fs = require('fs');
 
